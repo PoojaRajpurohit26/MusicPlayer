@@ -1,0 +1,316 @@
+/* Google Font "Poppins" */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+body{
+	font-family: 'Poppins' sans-serif;
+}
+div.container-fluid{
+	width: 100%;
+	height: 100vh;
+	background: #000;
+}
+/*.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111727;
+  overflow-x: hidden;
+}
+/*@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.song_side{
+	width: 100%;
+	height: 100vh;
+	background: #111727;
+	transition: 0.5s;
+	overflow-y: auto;
+}
+div.nav-content{
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  padding-bottom:50px;
+}
+nav.navbar-expand-md{
+	background: #111;
+}
+.upper_menu,.lower_menu{
+	padding: 5px;
+	height: 20%;
+	background: #111727;
+	border: 4px solid #000;
+}
+.lower_menu{
+	padding: 10px;
+	height: 80%;
+}
+span.alb{
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+div.album{
+	padding: 20px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+#playlist,#category{
+	margin: 5px;
+	border-radius: 20px;
+}
+/*.btn-light{
+	color: #5bc0de;
+	border: 1px solid #5bc0de;
+	border-radius: 20px;
+}*/
+#recent-back{
+	margin-top: 15px;
+	margin-left: 0px;
+	color: #5bc0de;
+	cursor: pointer;
+}
+#log,#sign{
+	margin: 4px;
+	border-radius: 20px;
+	float: right;
+}
+.modal-header,.modal-body,.modal-footer,.modal-playlist_body{
+	color: #fff;
+	background: #000;
+}
+ul.cat li.cat_li{
+	list-style-type: none;
+	/*color: #fff;
+	background: #000;
+	border: 1px solid #fff;
+	border-radius: 20px;*/
+	margin-bottom: 5px;
+	padding: 10 50px;
+}
+.fa-user-circle-o,.fa-heart#favourite,.fa-sign-out{
+	float: right;
+	margin: 2px 15px;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .col-lg-2,.album_data,.album_song,.liked_song,.footer_progressbar {
+	  width: 80%;
+	}
+}
+/*@media screen and (max-width: 768px) {
+    .liked_song,.footer_progressbar {
+	  width: 50%;
+	}
+}*/
+/*@media screen and (max-width: 768) {
+  .song_content {margin-bottom: 80px;}
+}*/
+.sidenav {
+  height: 100%;
+  /*width: 0;*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  /*overflow-x: hidden;*/
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/*.sidenav .closebtn {
+  color: #5bc0de;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding: 10px 15px;
+}*/
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover{
+  background-color: #444;
+}
+.fa-heart#favourite:hover,.fa-user-circle-o:hover,.fa-sign-out:hover {
+	background-color: #444;
+}
+#recent-back:hover,.fa-home:hover {
+	background-color: #444;
+}
+
+/*.closebtn:hover {
+  background-color: #444;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}*/
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  /*.sidenav a {font-size: 18px;}*/
+}
+.song_content{
+	width: 100%;
+	height: 100vh;
+}
+#mysidebar{
+	width: 300px;
+}
+#mysidebar.active{
+	margin-left: -300px;
+}
+#main{
+	margin-left: 300px;
+}
+#main.active{
+	margin-left: 0px;
+}
+.alb_cnt{
+	color: white;
+	padding-bottom: 0px;
+}
+.fa-play-circle-o,.p_list{
+	color: white;
+	cursor: pointer;
+}
+.footer{
+	background: #000;
+	width: 100%;
+	height: 10%;
+	/*left: 0px;*/
+	bottom: 0px;
+	position: fixed;
+	transition: 0.5s;
+}
+.footer{
+	margin-left: 300px;
+}
+.footer.active{
+	margin-left: 0px;
+}
+/*.fa-play{
+	font-size: 24;
+	color: #5bc0de;
+	padding: 20px 400px;
+}*/
+
+ul.footer_pbar{
+	margin-left: 200px;
+}
+li.pbar-item{
+	display: inline-block;
+	margin-right: 20px;
+}
+.progressbar{
+	/*margin: 5px 5px 5px 400px;*/
+	width: 500px;
+	margin: 5px 0px;
+}
+input[type="range"] {
+  accent-color: #5bc0de;
+}
+.img_footer{
+	margin: 7px;
+	margin-left: 30px;
+}
+span.current_song,span.current_src,span.current_duration,span.total_duration{
+	font-size: 18px;
+	color: #5bc0de;
+}
+
+.recent_data:hover{
+	background-color: #444;
+}
+
+.create_playlist{
+	color: white;
+	background: #000;
+	width: 260px;
+	height: 40px;
+	margin-top: 10px;
+}
+.create{
+	margin: 5px 20px;
+	border-radius: 20px;
+}
+.cancel{
+	margin: 5px 20px;
+	border-radius: 20px;
+}
+
+.playlist_data:hover{
+	background-color: #444;
+}
+
+ul.ul_playlist:hover{
+	background-color: #444;
+}
+
+ul.ul_playlist{
+	list-style-type: none;
+}
+
+.footer_before_login{
+	color: white;
+	font-size: 20px;
+	padding-left: 100px;
+	padding-top: 5px;
+	cursor: pointer;
+}
+.initial-footer{
+	background: #5bc0de;
+}
+.recent_before_lg{
+	color: white;
+	font-size: 20px;
+	margin-left: 80px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.recent_before_login{
+	background: #5bc0de;
+	border-radius: 50%;
+	margin-top: 100px;
+}
